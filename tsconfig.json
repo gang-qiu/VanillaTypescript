@@ -7,7 +7,7 @@
     "allowJs": false,
     "strict": true,
     "sourceMap": true,
-    "baseUrl": "src",
+    "baseUrl": "src/typescript",
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
