@@ -31,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Testosterone',
+      template: "src/index.html"
     }),
   ],
   devtool: 'inline-source-map',

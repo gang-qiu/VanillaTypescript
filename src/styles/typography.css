@@ -1,33 +1,25 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url('./fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf') format('ttf');
+  src: url('../fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('./fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('ttf');
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Moonrocks';
-  src: url('./fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf') format('ttf');
+  src: url('../fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf') format('truetype');
   font-style: normal;
 }
 
 body {
   font-family: "OpenSans", "Helvetica Neue", Helvetica, sans-serif;
 }
-
 .font-moonrocks {
   font-family: "Moonrocks", sans-serif;
-  color: red;
 }
 
-h1 {font-size: 3.5rem;}
-h2 {font-size: 3rem;}
-h3 {font-size: 2.5rem;}
-h4 {font-size: 2rem;}
-h5 {font-size: 1.5rem;}
-h6 {font-size: 1rem;}
+h1 {font-size: 8rem;}
+h2 {font-size: 6rem;}
+h3 {font-size: 4.5rem;}
+h4 {font-size: 3.25rem;}
+h5 {font-size: 2.25rem;}
+h6 {font-size: 1.5rem;}
