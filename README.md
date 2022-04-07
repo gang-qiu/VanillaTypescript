@@ -3,7 +3,7 @@
 ### Features
 - typescript compilation
 - css loading
-- image imports in javascript
+- image imports in javascript and css (but not html <img />)
 - custom font loading
 - module-based imports across different files
 
@@ -12,4 +12,5 @@
 - separate dev/production load
 - linting / prettier
 - scss
+- form elements and validation
 - build demo todo app
