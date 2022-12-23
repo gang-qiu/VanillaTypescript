@@ -7,6 +7,13 @@
 - custom font loading
 - module-based imports across different files
 
+### Setup
+```bash
+npm install
+npm start # starts webpack dev server
+          # navigate to http://localhost:8081/
+```
+
 ### Todo
 - test configuration
 - separate dev/production load
