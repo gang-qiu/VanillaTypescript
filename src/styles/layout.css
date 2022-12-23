@@ -15,9 +15,3 @@
 .margin-bottom-lg {margin-bottom: var(--spacing-sm);}
 .margin-bottom-xl {margin-bottom: var(--spacing-sm);}
 
-.container-round-lg {
-  padding: var(--spacing-md) var(--spacing-lg);
-  margin: var(--spacing-lg) 0;
-  border-radius: var(--spacing-md);
-  border: 1px solid grey;
-}

@@ -14,7 +14,7 @@ body {
   font-family: "OpenSans", "Helvetica Neue", Helvetica, sans-serif;
 }
 .font-moonrocks {
-  font-family: "Moonrocks", sans-serif;
+  font-family: "Moonrocks";
 }
 
 h1 {font-size: var(--font-size-xxxl);}
@@ -24,3 +24,6 @@ h4 {font-size: var(--font-size-lg);}
 h5 {font-size: var(--font-size-xxmd);}
 h6 {font-size: var(--font-size-xmd);}
 p {font-size: var(--font-size-base)}
+
+.font-bold {font-weight: bold;}
+.font-italic {font-style: italic;}

@@ -5,30 +5,53 @@
     <title>ToDone</title>
   </head>
   <body>
-    <header class="margin-lg">
-      <h3 class="font-moonrocks">Vanilla Typescript Boilerplate</h3>
+    <header class="margin-md">
+      <h1>Vanilla Typescript Boilerplate</h1>
     </header>
-    <main id="main-content" class="margin-lg">
-      <h3 class="margin-bottom-lg">Typography</h3>
-      <section id="section-typography" class="container-round-lg">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <hr>
-        <p>Normal Paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci consectetur culpa ea eius enim et minus, odit porro quo saepe vero voluptate voluptatem? Accusantium minus quis repellat vel voluptas!</p>
-      </section>
-      <section id="section-images">
-        <h3 class="margin-bottom-lg">Images</h3>
-        <p>img elements don't work in pure html page</p>
-        <img src="images/icons/001-star.png" alt="star" />
-        <p>image from css background-image property</p>
-        <div class="icon-star"></div>
-        <p>image from javascript</p>
-        <!-- image will be inserted here via js -->
-      </section>
+    <main id="main-content" class="margin-md">
+      <details open class="detail-card" id="section-layout">
+        <summary>
+          <h3 class="padding-md">Layout</h3>
+        </summary>
+        <div class="padding-md">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos doloribus eaque laborum porro quisquam ratione? A exercitationem expedita harum in laudantium porro quaerat rem. Deserunt dicta eum labore velit.
+        </div>
+      </details>
+      <details open class="detail-card" id="section-typography">
+        <summary>
+          <h3 class="margin-bottom-lg">Typography</h3>
+        </summary>
+        <section>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <hr>
+          <h6>Normal Paragraph</h6>
+          <p class="margin-bottom-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci consectetur culpa ea eius enim et minus, odit porro quo saepe vero voluptate voluptatem? Accusantium minus quis repellat vel voluptas!</p>
+          <h6>Bold Paragraph</h6>
+          <p class="margin-bottom-sm font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci consectetur culpa ea eius enim et minus, odit porro quo saepe vero voluptate voluptatem? Accusantium minus quis repellat vel voluptas!</p>
+          <h6>Italics Paragraph</h6>
+          <p class="font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci consectetur culpa ea eius enim et minus, odit porro quo saepe vero voluptate voluptatem? Accusantium minus quis repellat vel voluptas!</p>
+          <hr>
+          <h3 class="font-moonrocks">Custom Fonts</h3>
+        </section>
+      </details>
+      <details open class="container-round-lg">
+        <summary>
+          <h3 class="margin-bottom-lg">Images</h3>
+        </summary>
+        <section id="section-images">
+          <p>img elements don't work in pure html page</p>
+          <img src="images/icons/001-star.png" alt="star" />
+          <p>image from css background-image property</p>
+          <div class="icon-star"></div>
+          <p>image from javascript</p>
+          <!-- image will be inserted here via js -->
+        </section>
+      </details>
     </main>
   </body>
 </html>
