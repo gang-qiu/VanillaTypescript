@@ -1,4 +1,3 @@
-import './styles.css';
 import templateHtml from './template.html';
 
 class GqCollapsibleCard extends HTMLElement {
