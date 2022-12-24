@@ -9,19 +9,15 @@
       <h1>Vanilla Typescript Boilerplate</h1>
     </header>
     <main id="main-content" class="margin-md">
-      <details open class="detail-card" id="section-layout">
-        <summary>
-          <h3 class="padding-md">Layout</h3>
-        </summary>
-        <div class="padding-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos doloribus eaque laborum porro quisquam ratione? A exercitationem expedita harum in laudantium porro quaerat rem. Deserunt dicta eum labore velit.
-        </div>
-      </details>
-      <details open class="detail-card" id="section-typography">
-        <summary>
-          <h3 class="margin-bottom-lg">Typography</h3>
-        </summary>
-        <section>
+      <gq-collapsible-card>
+        <h3 slot="title">Layout</h3>
+        <section slot="content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam molestias nostrum vel voluptates. Aliquid, consequatur cupiditate deleniti deserunt ducimus eligendi iure maiores nesciunt recusandae voluptate! In iure obcaecati porro qui.
+        </section>
+      </gq-collapsible-card>
+      <gq-collapsible-card>
+        <h3 slot="title">Typography</h3>
+        <section slot="content">
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
           <h3>Heading 3</h3>
@@ -38,20 +34,51 @@
           <hr>
           <h3 class="font-moonrocks">Custom Fonts</h3>
         </section>
-      </details>
-      <details open class="container-round-lg">
-        <summary>
-          <h3 class="margin-bottom-lg">Images</h3>
-        </summary>
-        <section id="section-images">
+      </gq-collapsible-card>
+      <gq-collapsible-card>
+        <h3 slot="title">Images</h3>
+        <section slot="content" id="section-images">
           <p>img elements don't work in pure html page</p>
           <img src="images/icons/001-star.png" alt="star" />
           <p>image from css background-image property</p>
           <div class="icon-star"></div>
-          <p>image from javascript</p>
-          <!-- image will be inserted here via js -->
         </section>
-      </details>
+      </gq-collapsible-card>
     </main>
   </body>
+
+  <template id="gq-collapsible-card">
+    <style>
+      details {
+        border: 1px solid grey;
+        margin: var(--spacing-lg) 0;
+        border-radius: var(--spacing-md);
+      }
+
+      details > summary {
+        cursor: pointer;
+        list-style: none;
+      }
+
+      details[open] > summary {
+        border-bottom: 1px solid grey;
+      }
+
+      .padding-md {
+        padding: var(--spacing-md) var(--spacing-xl);
+      }
+    </style>
+
+    <details class="detail-card" id="section-layout">
+      <summary>
+        <div class="padding-md">
+          <slot name="title"></slot>
+        </div>
+      </summary>
+      <div class="padding-md">
+        <slot name="content"></slot>
+      </div>
+    </details>
+  </template>
+
 </html>

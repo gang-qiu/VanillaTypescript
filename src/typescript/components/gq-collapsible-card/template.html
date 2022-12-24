@@ -1,0 +1,16 @@
+<template id="gq-collapsible-card">
+  <style>
+
+  </style>
+
+  <details open class="detail-card" id="section-layout">
+    <summary>
+      <h3 class="padding-md">
+        <slot name="title"></slot>
+      </h3>
+    </summary>
+    <div class="padding-md">
+      <slot name="content"></slot>
+    </div>
+  </details>
+</template>

@@ -1,0 +1,1 @@
+import './gq-collapsible-card';
