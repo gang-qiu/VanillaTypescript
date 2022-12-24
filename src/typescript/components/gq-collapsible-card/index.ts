@@ -1,13 +1,16 @@
 import './styles.css';
+import templateHtml from './template.html';
 
 class GqCollapsibleCard extends HTMLElement {
   constructor() {
     super();
 
-    const template = document.getElementById('gq-collapsible-card') as HTMLTemplateElement | null;
+    const template = document.createElement('template')
+    template.innerHTML = templateHtml
+
     if (template?.content) {
       const shadowRoot = this.attachShadow({mode: 'open'});
-      shadowRoot.appendChild(template.content.cloneNode(true));
+      shadowRoot.appendChild(template.content.cloneNode(true))
     }
   }
 }

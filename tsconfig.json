@@ -12,6 +12,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
+
+    // allows for nice html imports in ts files
+    // eg import template form './template.html'
+    "allowSyntheticDefaultImports": true,
   },
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
   "include": ["src", "index.d.ts"]

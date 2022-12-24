@@ -1,16 +1,38 @@
-<template id="gq-collapsible-card">
-  <style>
+<style>
+  details {
+    border: 1px solid grey;
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--spacing-xs);
+  }
 
-  </style>
+  details > summary {
+    cursor: pointer;
+    list-style: none;
+    background-color: #ddd;
+    border-radius: var(--spacing-xs);
+  }
 
-  <details open class="detail-card" id="section-layout">
-    <summary>
-      <h3 class="padding-md">
-        <slot name="title"></slot>
-      </h3>
-    </summary>
+  details[open] > summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  details[open] > summary {
+    border-bottom: 1px solid grey;
+  }
+
+  .padding-md {
+    padding: var(--spacing-md) var(--spacing-xl);
+  }
+</style>
+
+<details class="detail-card" id="section-layout">
+  <summary>
     <div class="padding-md">
-      <slot name="content"></slot>
+      <slot name="title"></slot>
     </div>
-  </details>
-</template>
+  </summary>
+  <div class="padding-md">
+    <slot name="content"></slot>
+  </div>
+</details>
