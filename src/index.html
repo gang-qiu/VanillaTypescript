@@ -52,12 +52,19 @@
       details {
         border: 1px solid grey;
         margin: var(--spacing-lg) 0;
-        border-radius: var(--spacing-md);
+        border-radius: var(--spacing-xs);
       }
 
       details > summary {
         cursor: pointer;
         list-style: none;
+        background-color: #ddd;
+        border-radius: var(--spacing-xs);
+      }
+
+      details[open] > summary {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
 
       details[open] > summary {
@@ -69,7 +76,7 @@
       }
     </style>
 
-    <details class="detail-card" id="section-layout">
+    <details open class="detail-card" id="section-layout">
       <summary>
         <div class="padding-md">
           <slot name="title"></slot>
