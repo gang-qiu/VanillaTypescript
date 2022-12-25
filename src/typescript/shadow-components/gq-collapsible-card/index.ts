@@ -5,7 +5,7 @@ class GqCollapsibleCard extends HTMLElement {
     super();
 
     const template = document.createElement('template')
-    template.innerHTML = templateHtml
+    template.innerHTML = templateHtml;
 
     if (template?.content) {
       const shadowRoot = this.attachShadow({mode: 'open'});

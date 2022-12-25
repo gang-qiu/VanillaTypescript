@@ -12,6 +12,7 @@ module.exports = {
         loader: 'html-loader',
       },
       {
+        // compiles typescript
         test: /\.ts?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
@@ -19,7 +20,11 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
+          // loads css as a single <link> tag
+          // allows for shadowDOM components to load from `<style>@import 'main.css'</style>
           MiniCssExtractPlugin.loader,
+          // 'style-loader',
+          // allows for css @import's
           'css-loader',
         ],
       },

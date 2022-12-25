@@ -1,0 +1,21 @@
+details.detail-card {
+  border: 1px solid grey;
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--spacing-xs);
+}
+
+details.detail-card > summary {
+  cursor: pointer;
+  list-style: none;
+  background-color: #ddd;
+  border-radius: var(--spacing-xs);
+}
+
+details.detail-card[open] > summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+details.detail-card[open] > summary {
+  border-bottom: 1px solid grey;
+}
